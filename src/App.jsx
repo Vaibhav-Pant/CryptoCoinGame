@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Terms from '../Pages/Terms'
 import HomePage from '../Pages/HomePage'
-import MetaMaskPopup from '../Components/MetaMaskpopup'
+import MetaMaskPopup from '../Components/MetaMaskPopup'
 
 const App = () => {
 
