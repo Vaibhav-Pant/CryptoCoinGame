@@ -46,7 +46,6 @@ export default function HomePage() {
   const handlePlaceBet = async () => {
     setFlipCoin(true);
     try {
-      // const contractAddress = "0xeA79D557b1EFe0039B1C8EEE633040eBE360F2a4";
       const contractAddress = `${import.meta.env.VITE_CONTRACT_ADDRESS}`;
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
