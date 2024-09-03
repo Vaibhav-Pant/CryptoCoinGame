@@ -34,9 +34,10 @@ const Coin = styled.div`
   ${(props) =>
     props.isFlipping &&
     css`
-      animation: ${flip} 60s ease;
+      animation: ${flip} 2s ease;
     `}
   animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
   backface-visibility: hidden;
 `;
 
@@ -50,17 +51,7 @@ const Result = styled.div`
   color: #ffd500;
 `;
 
-export default function CoinToss({selectedSide, onResult, flipCoin, setFlipCoin }) {
-  const [local_result, setResult] = useState('');
-
-  const handleFlip = () => {
-    setTimeout(() => {
-        const randomResult = Math.random() > 0.5 ? 'H' : 'T';
-        setResult(randomResult);
-        // onResult(local_result);   
-        setFlipCoin(false);
-    }, 2000);
-  };
+export default function CoinToss({selectedSide, onResult, flipCoin }) {
 
   return (
     <CoinContainer>

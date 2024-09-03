@@ -101,7 +101,7 @@ export default function HomePage() {
         <Buttons onChange={handleSliderChange} />
       </div>
 
-      <CoinToss onResult={result} selectedSide={selectedSide} flipCoin={flipCoin} setFlipCoin={handleCoinFlipping} />
+      <CoinToss onResult={result} selectedSide={selectedSide} flipCoin={flipCoin}  />
 
       <WinLosepopup
         isVisible={WinLosepopupVisible}
